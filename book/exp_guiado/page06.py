@@ -6,7 +6,7 @@ def page6_func():
 
     i1, i2  = st.columns([2,1])
     with i1:
-        st.image('book/Slide4.png', use_column_width=True)
+        st.image('book/Slide4.PNG', use_column_width=True)
 
     with i2:
         with st.form(key='pergunta_guiado_06', clear_on_submit=False):
@@ -51,7 +51,7 @@ def page6_func():
 
     # c1, c2 = st.columns(2)
     # with c1:
-    st.image('book/Slide5.png', use_column_width=True)      
-    st.image('book/Slide6.png', use_column_width=True)
+    st.image('book/Slide5.PNG', use_column_width=True)      
+    st.image('book/Slide6.PNG', use_column_width=True)
    
     return
