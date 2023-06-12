@@ -7,9 +7,9 @@ def page5_func():
     i1, i2, i3  = st.columns([0.5,5,0.5])
     with i2:
         st.write(" ")
-        st.image('book/Slide1.png', use_column_width=True)
-        st.image('book/Slide2.png', use_column_width=True)
-        st.image('book/Slide3.png', use_column_width=True)
+        st.image('book/Slide1.PNG', use_column_width=True)
+        st.image('book/Slide2.PNG', use_column_width=True)
+        st.image('book/Slide3.PNG', use_column_width=True)
 
     c_1, c_2, c_3 = st.columns([1,3,1])
     with c_2:
