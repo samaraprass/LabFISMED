@@ -1,0 +1,13 @@
+[theme]
+primaryColor="#e0a044"
+backgroundColor="#ffffff"
+secondaryBackgroundColor="#eeeeee"
+textColor="#000000"
+
+[server]
+runOnSave = true
+
+[client]
+# Whether to enable st.cache.
+# Default: true
+caching = true
