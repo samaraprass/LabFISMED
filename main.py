@@ -352,7 +352,7 @@ if selected == 'Atenuação da Radiação':
             data = f.read()
 
         # render timeline
-        timeline(data, height=500)
+        timeline(data, height=650)
 
 if selected == "Decaimento Radioativo":
     # Lab Logo
