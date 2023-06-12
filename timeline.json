@@ -1,0 +1,91 @@
+{
+    "title": {
+        "media": {
+          "url": "https://raw.githubusercontent.com/samaraprass/LabFISMED/main/timeline/1.png"
+        }
+    },
+    "events": [
+      {
+        "media": {
+          "url": "https://raw.githubusercontent.com/samaraprass/LabFISMED/main/timeline/2.png",
+          "caption": "Discovery of X-rays (<a target=\"_blank\" href='http://www.radioinmama.com.br/historia.htm'>credits</a>)"
+        },
+
+        "start_date": {
+          "year": "1895"
+        }
+      },
+        
+      {
+        "media": {
+          "url": "https://raw.githubusercontent.com/samaraprass/LabFISMED/main/timeline/3.png",
+          "caption": "Improvement of X-rays (<a target=\"_blank\" href='https://time.com/4155549/vintage-x-ray-photos/'>credits</a>)"
+        },
+
+        "start_date": {
+          "year": "1904"
+        }
+      }, 
+
+      {
+        "media": {
+          "url": "https://raw.githubusercontent.com/samaraprass/LabFISMED/main/timeline/4.png",
+          "caption": "Reduction of Scattered Radiation (<a target=\"_blank\" href='https://www.filadelfia.com.br/artigo-academico/evolucao-do-aparelho-de-raio-x/'>credits</a>)"
+        },
+
+        "start_date": {
+          "year": "1912"
+        }
+      },
+
+      {
+        "media": {
+          "url": "https://raw.githubusercontent.com/samaraprass/LabFISMED/main/timeline/5.png",
+          "caption": "Mobility as a tool (<a target=\"_blank\" href='https://www.medmuseum.siemens-healthineers.com/en/stories-from-the-museum/x-ray-images-2-horsepower'>credits</a>)"
+        },
+        "start_date": {
+          "year": "1930"
+        }
+      },
+
+      {
+        "media": {
+          "url": "https://raw.githubusercontent.com/samaraprass/LabFISMED/main/timeline/6.png",
+          "caption": "Combination of improvements (<a target=\"_blank\" href='https://time.com/4155549/vintage-x-ray-photos/'>credits</a>)"
+        },
+        "start_date": {
+          "year": "1940"
+        }
+      },
+
+      {
+        "media": {
+          "url": "https://raw.githubusercontent.com/samaraprass/LabFISMED/main/timeline/7.png",
+          "caption": "Evolution in Fluoroscopy (<a target=\"_blank\" href='http://www.imaginologia.com.br/extra/upload%20historia/Desenvolvimento-da-Radiologia-Intervencionista.pdf'>credits</a>)"
+        },
+        "start_date": {
+          "year": "1950"
+        }
+      },
+
+      {
+        "media": {
+          "url": "https://raw.githubusercontent.com/samaraprass/LabFISMED/main/timeline/8.png",
+          "caption": "Mammography as we know it (<a target=\"_blank\" href='https://www.scielo.br/j/rb/a/wmDsgqS9qb8NSZfgJ5F5w7N/?lang=pt'>credits</a>)"
+        },
+        "start_date": {
+          "year": "1960"
+        }
+      },
+
+      {
+        "media": {
+          "url": "https://raw.githubusercontent.com/samaraprass/LabFISMED/main/timeline/9.png",
+          "caption": "The Great Revolution (<a target=\"_blank\" href='https://urgente24.com/foco/piramides-y-the-beatles-50-anos-la-tomografia-computarizada-n527567'>credits</a>)"
+        },
+        "start_date": {
+          "year": "1970"
+        }
+      }
+    ]
+}

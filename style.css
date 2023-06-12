@@ -1,0 +1,77 @@
+div.row-widget.stSelectbox > div > div {
+    color: black;
+}
+
+div[class="block-container css-z5fcl4 egzxvld4"] {
+    padding: 2rem 3rem 2rem;
+}
+
+div[class="css-1544g2n e1fqkh3o4"] {
+    padding: 2rem 0.8rem 2rem;
+}
+
+div.row-widget.stSelectbox > label {
+    font-weight: 600;
+}
+
+div.stNumberInput > label {
+    font-weight: 600;
+}
+
+div.stNumberInput > div > div > div[data-baseweb="base-input"] > input{
+    color:black;
+}
+
+div.stSlider {
+    font-weight: 600;
+}
+
+section[data-testid="stSidebar"] > div[class="css-ejuvvq e1fqkh3o1"]{
+    background-image: linear-gradient(#254565);
+}
+
+section[data-testid="stSidebar"] > div[class="css-ejuvvq e1fqkh3o1"] > div.block-container.css-1gx893w.eknhn3m2 > div > div.element-container.css-1e5imcs.e1tzin5v1 > div.row-widget.stSelectbox > div > div{
+    color: black;
+    font-weight: 500;
+
+}
+
+section[data-testid="stSidebar"] > div[class="css-ejuvvq e1fqkh3o1"] > div.block-container.css-1gx893w.eknhn3m2 > div > div.element-container.css-1e5imcs.e1tzin5v1 > div.row-widget.stSelectbox > label{
+    color: white;
+}
+
+.css-1z8u7d {
+    border: 0px; 
+    /* solid rgba(0, 0, 0, 0.2);  */
+    border-radius: 0.25rem;
+    padding: calc(1em - 1px);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+a:link , a:visited{
+color: rgb(0, 0, 8);
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:hover,  a:active {
+color: rgb(238, 124, 124);
+background-color: transparent;
+text-decoration: underline;
+}
+
+.footer {
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: rgba(245, 245, 245, 0);
+color: black;
+text-align: justify;
+}
