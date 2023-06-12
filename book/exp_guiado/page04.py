@@ -5,13 +5,13 @@ def page4_func():
     i1, i2, i3  = st.columns([0.5,5,0.5])
     with i2:
         st.write(" ")
-        st.image('book/05.png', use_column_width=True)
-        st.image('book/06.png', use_column_width=True)
+        st.image('book/05.PNG', use_column_width=True)
+        st.image('book/06.PNG', use_column_width=True)
     i_1, i_2 = st.columns(2)
     with i_1:
-        st.image('book/07.png', use_column_width=True)
+        st.image('book/07.PNG', use_column_width=True)
     with i_2:
-        st.image('book/08.png', use_column_width=True)
+        st.image('book/08.PNG', use_column_width=True)
     st.write(' ')
 
     # st.markdown('''
