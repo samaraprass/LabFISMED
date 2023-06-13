@@ -206,14 +206,14 @@ if selected == "Home": #Home function
     TXT_IMG.texto(t10, 16, 'black')
 
     TXT_IMG.texto("Conheça nossa equipe", 25, '#696969')
-    t11 = '''• <a href="http://lattes.cnpq.br/6663802572618837" target=> Cibele Cruz Marques</a>: Elaboração de roteiros para os experimentos guiados do módulo básico e avançado;'''
-    t13 = '''• <a href="https://lattes.cnpq.br/3536359835543055" taget=> Gustavo de Carvalho</a>: Elaboração de artes e animações, confecção do avatar dos membros do projeto e pesquisa do contexto histórico;'''
-    t12 = '''• <a href="http://lattes.cnpq.br/6113418229155107" target=> Felipe Fernando Muller dos Santos</a>: Pesquisa e elaboração de textos sobre o conceito histórico, seleção de imagens históricas, criação de templates para linha do tempo;'''
-    t14 = '''• <a href="http://lattes.cnpq.br/4640225746109996" target=> Henrique Trombini</a>: Coordenador do projeto;'''
-    t15 = '''• <a href="http://lattes.cnpq.br/2490332310814507" target=> Maíra Tiemi Yoshizumi</a>: Sugestões de conteúdos e revisão dos roteiros;'''
-    t16 = '''• <a href="http://lattes.cnpq.br/5022501224204788" target=> Raquel Solares Soares</a>: Elaboração de roteiros para os experimentos, pesquisa de bibliotecas em Python para a implementação do laboratório virtual, elaboração de artigo científico, levantamento das características dos materiais e energias;'''
-    t17 = '''• <a href="http://lattes.cnpq.br/9679712535577946" target=> Samara Prass dos Santos</a>: Pesquisa de bibliotecas em Python para implementação do laboratório virtual, elaboração de identidade visual, escrita do código dos experimentos de atenuação da radiação ionizante na matéria e decaimento radioativo; desenvolvimento e manutenção do LabFISMED utilizando a biblioteca Streamlit e Visual Studio Code;'''
-    t18 = '''• <a href="http://lattes.cnpq.br/6545287935099792" target=> Thatiane Alves Pianoschi</a>: Sugestões de conteúdos e revisão dos roteiros.'''
+    t11 = '''•<a href="http://lattes.cnpq.br/6663802572618837" target=> Cibele Cruz Marques</a>: Elaboração de roteiros para os experimentos guiados do módulo básico e avançado;'''
+    t13 = '''•<a href="https://lattes.cnpq.br/3536359835543055" taget=> Gustavo de Carvalho</a>: Elaboração de artes e animações, confecção do avatar dos membros do projeto e pesquisa do contexto histórico;'''
+    t12 = '''•<a href="http://lattes.cnpq.br/6113418229155107" target=> Felipe Fernando Muller dos Santos</a>: Pesquisa e elaboração de textos sobre o conceito histórico, seleção de imagens históricas, criação de templates para linha do tempo;'''
+    t14 = '''•<a href="http://lattes.cnpq.br/4640225746109996" target=> Henrique Trombini</a>: Coordenador do projeto;'''
+    t15 = '''•<a href="http://lattes.cnpq.br/2490332310814507" target=> Maíra Tiemi Yoshizumi</a>: Sugestões de conteúdos e revisão dos roteiros;'''
+    t16 = '''•<a href="http://lattes.cnpq.br/5022501224204788" target=> Raquel Solares Soares</a>: Elaboração de roteiros para os experimentos, pesquisa de bibliotecas em Python para a implementação do laboratório virtual, elaboração de artigo científico, levantamento das características dos materiais e energias;'''
+    t17 = '''•<a href="http://lattes.cnpq.br/9679712535577946" target=> Samara Prass dos Santos</a>: Pesquisa de bibliotecas em Python para implementação do laboratório virtual, elaboração de identidade visual, escrita do código dos experimentos de atenuação da radiação ionizante na matéria e decaimento radioativo; desenvolvimento e manutenção do LabFISMED utilizando a biblioteca Streamlit e Visual Studio Code;'''
+    t18 = '''•<a href="http://lattes.cnpq.br/6545287935099792" target=> Thatiane Alves Pianoschi</a>: Sugestões de conteúdos e revisão dos roteiros.'''
 
     t_c1, t_c2, t_c3 = st.columns([2,0.1,2])
     with t_c1:
