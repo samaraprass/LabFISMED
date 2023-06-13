@@ -174,8 +174,8 @@ if selected == "Home": #Home function
 
         #st.map(df, zoom=15.5)
         #st.pydeck_chart(pdk.Deck(map_style='mapbox://styles/mapbox/light-v9', initial_view_state=pdk.ViewState(latitude=-30.031353983201605, 
-                                longitude=-51.2207610122685, zoom=15.5, height=hight), layers=[pdk.Layer('ScatterplotLayer',
-                                data=df, get_position='[lon, lat]', get_color='[200, 30, 0, 160]', get_radius=25, auto_highlight=True)]))
+                                #longitude=-51.2207610122685, zoom=15.5, height=hight), layers=[pdk.Layer('ScatterplotLayer',
+                                #data=df, get_position='[lon, lat]', get_color='[200, 30, 0, 160]', get_radius=25, auto_highlight=True)]))
     #st.write('')
 
     st.subheader('Sobre o Projeto')
