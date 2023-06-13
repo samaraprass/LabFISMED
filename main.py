@@ -141,14 +141,14 @@ if selected == "Home": #Home function
     ''', unsafe_allow_html=True)
     
     st.write("")
-    file_gif = open('gif_png/gif_lab_home.gif', 'rb')
-    content_gif = file_gif.read()
-    data_url_gif = base64.b64encode(content_gif).decode("utf-8")
-    file_gif.close()
-    st.markdown(f'<img src="data:image/gif;base64,{data_url_gif}" alt="cat gif" class="center" style="height: 20%; width: 50%; object-fit: contain">',
-                unsafe_allow_html=True,)
+    #file_gif = open('gif_png/gif_lab_home.gif', 'rb')
+    #content_gif = file_gif.read()
+   #data_url_gif = base64.b64encode(content_gif).decode("utf-8")
+    #file_gif.close()
+    #st.markdown(f'<img src="data:image/gif;base64,{data_url_gif}" alt="cat gif" class="center" style="height: 20%; width: 50%; object-fit: contain">',
+                #unsafe_allow_html=True,)
 
-    st.write("")
+    #st.write("")
 
     st.subheader("Sobre a UFCSPA")
     t2 = '''A Universidade Federal de Ciências da Saúde de Porto Alegre foi reconhecida como tal em 11 de janeiro de 2008, sendo originária da Fundação Faculdade Federal de Ciências
