@@ -162,21 +162,21 @@ if selected == "Home": #Home function
     TXT_IMG.texto(t2, 16, 'black')
     TXT_IMG.texto(t3, 16, 'black')
     
-    #m1, m2 = st.columns(2)
-    #with m1:
-        #st.image('gif_png/UFCSPA.png')
+    m1, m2 = st.columns(2)
+    with m1:
+        st.image('gif_png/UFCSPA.png')
         
-    #with m2:
-        #hight = 250
+    with m2:
+        hight = 250
 
-        #df = pd.DataFrame([[-30.031353983201605, -51.2207610122685]], columns=['lat', 'lon'])
+        df = pd.DataFrame([[-30.031353983201605, -51.2207610122685]], columns=['lat', 'lon'])
 
 
-        #st.map(df, zoom=15.5)
-        #st.pydeck_chart(pdk.Deck(map_style='mapbox://styles/mapbox/light-v9', initial_view_state=pdk.ViewState(latitude=-30.031353983201605, 
-                                #longitude=-51.2207610122685, zoom=15.5, height=hight), layers=[pdk.Layer('ScatterplotLayer',
-                                #data=df, get_position='[lon, lat]', get_color='[200, 30, 0, 160]', get_radius=25, auto_highlight=True)]))
-    #st.write('')
+        st.map(df, zoom=15.5)
+        st.pydeck_chart(pdk.Deck(map_style='mapbox://styles/mapbox/light-v9', initial_view_state=pdk.ViewState(latitude=-30.031353983201605, 
+                                longitude=-51.2207610122685, zoom=15.5, height=hight), layers=[pdk.Layer('ScatterplotLayer',
+                                data=df, get_position='[lon, lat]', get_color='[200, 30, 0, 160]', get_radius=25, auto_highlight=True)]))
+    st.write('')
 
     st.subheader('Sobre o Projeto')
     t4 = '''O Programa de Iniciação à Docência - PID da UFCSPA busca influenciar no desenvolvimento do ensino na graduação com a atuação de alunos de graduação como 
