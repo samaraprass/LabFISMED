@@ -25,7 +25,7 @@ def page3_func():
     '''
     TXT(text, 17, 'black')
     st.info("Note que o primeiro ponto do gráfico sempre representará a ausência do material em questão.")
-    st.warning("No eixo y está a porcentagem de fótons atenuados e no eixo x está a espessura do material.")
+    st.warning("No eixo y está a porcentagem de fótons detectados após passarem pelo material e no eixo x está a espessura do material.")
     styles = {'material-icons':{'color': 'red'},
             'text-icon-link-close-container': {'box-shadow': '#D24444 0px 5px'},
             'notification-text': {'':''},
