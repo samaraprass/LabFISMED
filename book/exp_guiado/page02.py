@@ -12,7 +12,7 @@ def page2_func():
 
     i_1, i_2, i_3 = st.columns([1.5,1.5,1.8])
     with i_1:
-        st.image('book\\new_coxa.png', use_column_width=True)
+        st.image('book\\tíbia.png', use_column_width=True)
 
     with i_2:
         st.image('book\\tíbia.png', use_column_width=True)
