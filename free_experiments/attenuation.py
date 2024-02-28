@@ -3,7 +3,6 @@ import core.texts_image as TXT_IMG
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-import base64
 from io import BytesIO
 
 
@@ -22,7 +21,7 @@ def attenuation():
     que lhe mostrará o número de fótons detectados para cada espessura. No final da página você encontrará os gráficos do seu experimento, os quais serão 
     atualizados sempre que você escolher novos valores e materiais na etapa 1.  
     '''
-    TXT_IMG.texto(t, 18, 'black')
+    TXT_IMG.texto(t, 19, 'black')
 
     st.warning('⚠️ Importante: para rodar o experimento com os valores que você escolheu, sempre clique no botão "Aplicar Escolhas" ao final do formulário.')
     
@@ -35,11 +34,11 @@ def attenuation():
                                     value=1000)
             st.write("Número de fótons iniciais escolhido: ", str(n0))
 
-            E = float(st.select_slider('Defina a energia do feixe (em keV)', options=[30, 60, 150, 300, 500, 1250, 6000, 10000]))
+            E = float(st.select_slider('Defina a energia do feixe (em keV)', options=[17, 30, 60, 150, 300, 500, 1250, 6000, 10000]))
             st.write("Energia do feixe escolhida: ", str(E), "keV")
 
         with a1_col2:
-            e = [30, 60, 150, 300, 500, 1250, 6000, 10000]
+            e = [17, 30, 60, 150, 300, 500, 1250, 6000, 10000]
             esp = st.number_input("\nInforme a espessura da blindagem, em centímetros: ", min_value=0,
                                     max_value=5000,
                                     value=60, help="Min=0, Max=5000")
@@ -50,42 +49,42 @@ def attenuation():
                                     ("Alumínio", 'Chumbo', 'Concreto', 'Urânio', 'Concreto Baritado', 'Mama',
                                         'Acrílico', 'Músculo', 'Osso', 'Tecido Mole', 'Tecido Adiposo', 'Água'))
             if material == 'Alumínio':
-                coef = [3.044472, 0.7414482, 0.3719222, 0.2812358, 0.22793055, 0.13511194, 0.07165845, 0.06256282]
+                coef = [6.21350365, 3.044472, 0.7414492, 0.3719222, 0.2912359, 0.22793055, 0.13511194, 0.07165945, 0.06256292]
 
             elif material == 'Chumbo':
-                coef = [3.44132, 5.698835, 2.28589, 0.4575185, 0.183189, 0.066926, 0.04983785, 0.0564322]
+                coef = [136.490736, 3.44132, 5.69935, 2.29599, 0.4575195, 0.193199, 0.066926, 0.04993795, 0.0564322]
 
             elif material == 'Concreto':
-                coef = [2.20823, 0.6118, 0.3736, 0.25231, 0.205045, 0.133561, 0.062031, 0.052394]
+                coef = [4.6599949, 2.20923, 0.6119, 0.3736, 0.25231, 0.205045, 0.133561, 0.062031, 0.052394]
 
             elif material == 'Urânio':
-                coef = [78.2256, 13.331325, 4.909945, 0.9883884, 0.374452, 0.1207115, 0.282355, 0.09844525]
+                coef = [47.2497367, 79.2256, 13.331325, 4.909945, 0.99394, 0.374452, 0.1207115, 0.292355, 0.09944525]
 
             elif material == 'Concreto Baritado':
-                coef = [18.59585, 13.87905, 1.481705, 0.4891, 0.3118515, 0.181034, 0.105927, 0.105123]
+                coef = [27.910219, 19.59595, 13.97905, 1.491705, 0.4991, 0.3119515, 0.191034, 0.105927, 0.105123]
 
             elif material == 'Mama':
-                coef = [0.347106, 0.3026, 0.152286, 0.120258, 0.0982362, 0.0641274, 0.0278562, 0.0221238]
+                coef = [1.07495799, 0.347106, 0.3026, 0.152296, 0.120259, 0.0992362, 0.0641274, 0.0279562, 0.0221239]
 
             elif material == 'Acrílico':
-                coef = [0.3600808, 0.228956, 0.173264, 0.137088, 0.111979, 0.0731017, 0.0316421, 0.0250495]
+                coef = [0.95397423, 0.3600909, 0.229956, 0.173264, 0.13709, 0.111979, 0.0731017, 0.0316421, 0.0250495]
 
             elif material == 'Músculo':
-                coef = [0.397215, 0.21504, 0.1566, 0.12348, 0.100779, 0.0657825, 0.0287805, 0.023016]
+                coef = [1.33211679, 0.397215, 0.21504, 0.1566, 0.12349, 0.100779, 0.0657925, 0.0297905, 0.023016]
 
             elif material == 'Osso':
-                coef = [2.55552, 0.604416, 0.28416, 0.213696, 0.1732224, 0.1127232, 0.0524928, 0.0444288]
+                coef = [6.9377316, 2.55552, 0.604416, 0.29416, 0.213696, 0.1732224, 0.1127232, 0.0524929, 0.044429]
 
             elif material == 'Tecido Mole':
-                coef = [0.401741, 0.217088, 0.158152, 0.12455, 0.1017388, 0.066409, 0.0290546, 0.0232458]
+                coef = [1.30109499, 0.401741, 0.21709, 0.159152, 0.12455, 0.101739, 0.066409, 0.0290546, 0.0232459]
 
             elif material == 'Tecido adiposo':
-                coef = [0.290985, 0.18753, 0.1425, 0.12765, 0.092112, 0.060135, 0.0258875, 0.0203775]
+                coef = [0.959366096, 0.290995, 0.19753, 0.1425, 0.12765, 0.092112, 0.060135, 0.025975, 0.0203775]
 
             elif material == 'Água':
-                coef = [0.3756, 0.2059, 0.1505, 0.1186, 0.09687, 0.06323, 0.0277, 0.02219]
+                coef = [1.30109499, 0.3756, 0.2059, 0.1505, 0.1196, 0.09697, 0.06323, 0.0277, 0.02219]
 
-            for i in range(0, 8):
+            for i in range(0, 9):
                 if E == e[i]:
                     mi = coef[i]
 
@@ -181,13 +180,13 @@ def attenuation():
         st.write(
             "\nO gráfico abaixo nos mostra a atenuação do feixe para as respectivas energias, de acordo com o material escolhido.\n")
         atenuado = []
-        for i in range(0, 8):
+        for i in range(0, 9):
             nf = n0 * (np.exp(-(x * coef[i])))
             atenuado.append(nf)
 
-        e = [30, 60, 150, 300, 500, 1250, 6000, 10000]  # energias disponíveis
+        e = [17, 30, 60, 150, 300, 500, 1250, 6000, 10000]  # energias disponíveis
         fig3, ax3 = plt.subplots(figsize=(10, 5))
-        for i in range(0, 8):
+        for i in range(0, 9):
             ax3.plot(x, atenuado[i], label=str(e[i]) + "kev")
             plt.xlabel('Espessura (cm)')
             plt.ylabel('Número de fótons')
@@ -195,102 +194,3 @@ def attenuation():
             ax3.legend()
         # fig3.tight_layout()
         st.pyplot(fig3)
-
-    # # Contexto Histórico
-    # elif exp == "Contexto Histórico":
-    #     st.subheader("Contexto Histórico")
-    #     ch1, ch2, ch3, ch4, ch5 = st.columns([0.3, 1.2, 0.1, 1.2, 0.3])
-    #     with ch2:
-    #         st.markdown('')
-    #         st.image('raios1.png', use_column_width=True)
-
-    #     with ch4:
-    #         st.image('rs1.png', use_column_width=True)
-
-    #     st.markdown('---')
-
-    #     ch_1, ch_2, ch_3, ch_4, ch_5 = st.columns([0.3, 1.1, 0.1, 1.3, 0.3])
-    #     with ch_2:
-    #         st.image('rr2.png', use_column_width=True)
-    #     with ch_4:
-    #         st.image('rg3.png', use_column_width=True)
-
-    #     st.markdown('---')
-
-    #     Ch1, Ch2, Ch3, Ch4, Ch5 = st.columns([0.3, 1.2, 0.1, 1.2, 0.3])
-    #     with Ch2:
-    #         st.image('rs4.png', use_column_width=True)
-    #     with Ch4:
-    #         st.markdown("")
-    #         st.markdown("")
-    #         st.image('raios2.png', use_column_width=True)
-
-    #     st.markdown('---')
-
-    #     Ch_1, Ch_2, Ch_3 = st.columns([2, 2, 1])
-    #     with Ch_1:
-    #         st.markdown("")
-    #         st.markdown("")
-    #         st.markdown("")
-    #         st.markdown("")
-    #         st.markdown("")
-    #         st.markdown("")
-    #         st.image('raios3.png', use_column_width=True)
-    #     with Ch_2:
-    #         st.image('rr5.png', use_column_width=True)
-    #     with Ch_3:
-    #         st.markdown("")
-    #         st.markdown("")
-    #         st.markdown("")
-    #         st.markdown("")
-    #         st.markdown("")
-    #         st.image('raios4.png', use_column_width=True)
-
-    #     st.markdown('---')
-
-    #     cch1, cch2, cch3, cch4, cch5 = st.columns([0.5, 1.2, 0.1, 1.1, 0.2])
-    #     with cch2:
-    #         st.image('rg6.png', use_column_width=True)
-    #     with cch4:
-    #         st.markdown("")
-    #         st.markdown("")
-    #         st.markdown("")
-    #         st.image('raios6.png')
-
-    #     st.markdown('---')
-
-    #     cch_1, cch_2, cch_3, cch_4, cch_5 = st.columns([0.5, 1.2, 0.1, 1.1, 0.2])
-    #     with cch_2:
-    #         st.image('rs7.png', use_column_width=True)
-    #     with cch_4:
-    #         st.markdown("")
-    #         st.markdown("")
-    #         st.markdown("")
-    #         st.markdown("")
-    #         st.image('raios5.png')
-
-
-    # if exp == "Relatório":
-    #     st.subheader("Relatório")
-
-    #     def displayPDF(file):
-    #         # Opening file from file path
-    #         with open(file, "rb") as f:
-    #             base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-
-    #         # Embedding PDF in HTML
-    #         pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="1000" type="application/pdf"></iframe>'
-
-    #         # Displaying File
-    #         st.markdown(pdf_display, unsafe_allow_html=True)
-        
-    #     st.markdown("""
-    #     <style>
-    #         .css-1898952.e16nr0p30 {
-	# 	    text-align:center;
-  	# 	    width: auto;
-    #         }
-    #     </style>
-    #     """, unsafe_allow_html=True)
-        
-    #     displayPDF("D:\\2021\\1_semestre\\Fisica_Nuclear\\Seminário\\NP_No10.pdf")
