@@ -56,7 +56,7 @@ with st.sidebar:
     ls1, ls2, ls3 = st.columns([1, 3, 1])
     with ls2:
         st.markdown(html, unsafe_allow_html=True)
-    selected = option_menu('Menu', ["Home", "Atenuação da Radiação",  "Decaimento Radioativo"], 
+    selected = option_menu('Menu', ["Home", "Atenuação da Radiação",  "Decaimento Radioativo", "Contexto Histórico"], 
     icons=['house', 'radioactive', "radioactive", 'files'], 
     menu_icon="cast", default_index=0, orientation="vertical",
     styles={
@@ -252,8 +252,8 @@ if selected == 'Atenuação da Radiação':
     selected2 = stx.tab_bar(data=[
     stx.TabBarItemData(id=1, title="Guiado Básico", description="Experimento guiado básico"),
     stx.TabBarItemData(id=2, title="Guiado Avançado", description="Experimento guiado avançado"),
-    stx.TabBarItemData(id=3, title="Livre", description="Experimento Livre"),
-    stx.TabBarItemData(id=4, title="Contexto Histórico", description="Linha do Tempo"),
+    stx.TabBarItemData(id=3, title="Livre", description="Experimento Livre")
+    # stx.TabBarItemData(id=4, title="Contexto Histórico", description="Linha do Tempo"),
     ], default=1)
     # stb.set_book_config(options=['Experimento Guiado', 'Experimento livre', 'Contexto Histórico', 'Relatório'], paths=["book/exp_guiado.py", 'book/01chapter.md'], menu_title="Selecione o desejado", orientation='horizontal')
     
@@ -346,13 +346,13 @@ if selected == 'Atenuação da Radiação':
     if selected2 == '3':
         ATT.attenuation()
     
-    if selected2 == "4":
-        # load data
-        with open('timeline.json', "r") as f:
-            data = f.read()
+    # if selected2 == "4":
+    #     # load data
+    #     with open('timeline.json', "r") as f:
+    #         data = f.read()
 
-        # render timeline
-        timeline(data, height=650)
+    #     # render timeline
+    #     timeline(data, height=500)
 
 if selected == "Decaimento Radioativo":
     # Lab Logo
@@ -370,3 +370,19 @@ if selected == "Decaimento Radioativo":
     file_gif_d.close()
     st.markdown(f'<img src="data:image/gif;base64,{data_url_gif_d}" alt="cat gif" class="center" style="height: 20%; width: 50%; object-fit: contain">',
                 unsafe_allow_html=True,)
+
+if selected == "Contexto Histórico":
+    # Lab Logo
+    file_lab = open('gif_png/logo_3.1.png', 'rb')
+    contents = file_lab.read()
+    data_url = base64.b64encode(contents).decode("utf-8")
+    file_lab.close()
+    html = f'<img src="data:image/gif;base64,{data_url}" alt="logo_ufcspa" class="center" style="height: 50%; width: 50%; object-fit: contain">'
+    st.markdown(html, unsafe_allow_html=True)
+    st.write(" ")
+    # load data
+    with open('timeline.json', "r") as f:
+        data = f.read()
+
+    # render timeline
+    timeline(data, height=500)
