@@ -20,8 +20,9 @@ def page3_func():
 
     st.subheader('O comportamento da atenuação dos raios X...')
     text = '''
-        Neste módulo, vamos ver graficamente como é o comportamento da atenuação dos raios X na matéria. Para isso, escolha três valores de espessuras abaixo
-        e veja o comportamento do gráfico ao ligar os pontos. Você pode testar diferentes valores. Após isso, responda o quiz no final da página. 
+        Neste módulo, vamos ver graficamente como é o comportamento da atenuação dos raios X para diferentes espessuras considerando que estamos utilizando a mesma energia e o mesmo material atenuador, 
+        sendo 20 keV e tecido mole, respectivamente. Para isso, escolha três valores de espessuras abaixo e veja o comportamento do gráfico ao ajustar os pontos. Você pode testar diferentes valores. 
+        Após isso, responda o quiz no final da página. 
     '''
     TXT(text, 17, 'black')
     st.info("Note que o primeiro ponto do gráfico sempre representará a ausência do material em questão.")
@@ -68,7 +69,7 @@ def page3_func():
         percs = [perc0, perc1, perc2, perc3]
         percs = np.round(np.array(percs)*100, 2)
 
-        st.session_state['b'] = st.checkbox('Clique aqui para ligar os pontos!')
+        st.session_state['b'] = st.checkbox('Clique aqui para ajustar os pontos!')
         
         if st.session_state['b']:
             fig1, ax1 = plt.subplots(figsize=(10, 5))
@@ -116,7 +117,7 @@ def page3_func():
             <style>div.card_f{background-color: rgba(255, 255, 0, 0.3);  text-align:center; padding: 20px; border-radius: 3px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s;}</style>
             <div class="card_f">
             <div class="container">
-            <h6> Após ligar os pontos no gráfico acima, responda: Os raios X estão sendo absorvidos/atenuados de que forma? </h6>
+            <h6> Após ajustar os pontos no gráfico acima, responda: Qual o comportamento que melhor descreve a absorção dos raios X no material? </h6>
             </div></div>
             ''', unsafe_allow_html=True)
 
@@ -143,19 +144,19 @@ def page3_func():
                             unsafe_allow_html=True)
                 #st_lottie(requests.get('https://assets4.lottiefiles.com/private_files/lf30_jq4i7W.json').json(), key="correct", loop = True, height=150)
                 st.error('Resposta errada, veja explicação abaixo e tente novamente...')
-                st.info('Relembrando!!! A Função Linear é uma função f : ℝ→ℝ definida como f(x) = a.x, sendo a um número real e diferente de zero. O gráfico da função linear é uma reta, que passa pela origem, ou seja, pelo ponto (0,0). O coeficiente a da função, corresponde a inclinação desta reta.')
+                st.info('Um ajuste linear representaria uma variação constante entre a intensidade dos raios X e a espessura do material que os raios X atravessaram.')
             if exp == 'Exponencial':
                 st.markdown(f'<img src="data:image/gif;base64,{data_url_animation_r}" alt="cat gif" class="center" style="width: 30%; object-fit: contain">',
                             unsafe_allow_html=True)
                 st.success('Resposta Certa!')
                 #st_lottie(requests.get('https://assets4.lottiefiles.com/packages/lf20_9aa9jkxv.json').json(), key="correct", loop = True, height=150)
-                st.info('Função Exponencial é aquela que a variável está no expoente e cuja base é sempre maior que zero e diferente de um.')
+                st.info('O melhor ajuste dos pontos é obtido através de uma exponencial, isso ocorre devido à natureza estocástica da interação dos raios X com o material.')
             if exp == 'Quadrática':
                 st.markdown(f'<img src="data:image/gif;base64,{data_url_animation_w}" alt="cat gif" class="center" style="width: 30%; object-fit: contain">',
                             unsafe_allow_html=True)
                 st.error('Resposta errada, veja explicação abaixo e tente novamente...')
                 #st_lottie(requests.get('https://assets4.lottiefiles.com/private_files/lf30_jq4i7W.json').json(), key="correct", loop = True, height=150)
-                st.info('Relembrando!!! O gráfico das funções do 2º grau são curvas que recebem o nome de parábolas. Diferente das funções do 1º grau, onde conhecendo dois pontos é possível traçar o gráfico, nas funções quadráticas são necessários conhecer vários pontos.')
+                st.info('Um ajuste quadrático representaria uma variação em forma de "U" ou "parábola" (quadrática) entre a intensidade dos raios X e a espessura do material.')
     with a2:
         if button_p1:
             if exp == 'Linear':
