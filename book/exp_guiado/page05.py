@@ -57,7 +57,7 @@ def page5_func():
                 #st_lottie(requests.get('https://assets4.lottiefiles.com/packages/lf20_9aa9jkxv.json').json(), key="correct", loop = True, height=150)
                 st.success('Resposta Certa!')
                 st.info('Tecidos densos e compostos por elementos com número atômico (Z) mais elevado, como das costelas, atenuam mais a radiação em comparação com os tecidos moles,' 
-                        'como o coração e os pulmões. Na imagem radiográfica, os tecidos que absorvem mais radiação aparecem mais claros (cor branca) enquanto, os tecidos que absorvem' 
+                        ' como o coração e os pulmões. Na imagem radiográfica, os tecidos que absorvem mais radiação aparecem mais claros (cor branca) enquanto, os tecidos que absorvem' 
                         ' pouca radiação aparecem mais escuros (cor preta). Tecidos que absorvem os raios X de forma moderada irão aparecer na imagem radiográfica em tons de cinza. Por esse motivo,'
                         ' em uma radiografia visualizamos os ossos (mais densos e com elementos de alto Z), pulmões (pouco densos e com elementos de baixo Z) e os tecidos moles (densidade intermediária'
                         ' e elementos de baixo Z) como o coração nas cores branca, preto e cinza, respectivamente. É nesta diferença de atenuação que está o contraste da imagem radiográfica.')
