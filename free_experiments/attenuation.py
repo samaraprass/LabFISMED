@@ -16,10 +16,10 @@ def attenuation():
     st.subheader("Realizando o Experimento Livre")
     t = '''
     Este experimento é livre, portanto você possui total liberdade de escolher os valores e materiais que deseja. 
-    Inicialmente, você poderá escolher as características do meio e do feixe que deseja, o qual lhe retornará o número 
+    Inicialmente, você poderá escolher as características do meio e do feixe, o que lhe retornará o número 
     de fótons detectados ao atravessar a blindagem do material que você escolheu. Após isso, você poderá ver a Tabela da Atenuação do feixe,
-    que lhe mostrará o número de fótons detectados para cada espessura. No final da página você encontrará os gráficos do seu experimento, os quais serão 
-    atualizados sempre que você escolher novos valores e materiais na etapa 1.  
+    que lhe mostrará o número de fótons detectados para cada espessura. No final da página você encontrará os gráficos do experimento, os quais serão 
+    atualizados sempre que você escolher novos valores e novos materiais na etapa 1.  
     '''
     TXT_IMG.texto(t, 19, 'black')
 
