@@ -1,4 +1,5 @@
 import streamlit as st
+import base64
 
 def page4_func():
     st.subheader('Melhorando as imagens...')
