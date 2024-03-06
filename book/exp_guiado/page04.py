@@ -88,13 +88,13 @@ def page4_func():
     with st.form("Energy"):
         c1, c2, c3, c4 = st.columns([2,2,2,1])
         with c1:
-            st.image('book/mod_4_1.png', width=300)
+            st.image('book/mod_4_1.png', width=200)
             exp1 = st.radio(' ', ('a', 'b', 'c'), horizontal=True, key='1st')
         with c2:
-            st.image('book/mod_4_2.png', width=300)
+            st.image('book/mod_4_2.png', width=200)
             exp2 = st.radio(' ', ('a', 'b', 'c'), horizontal=True, key='2nd')
         with c3:
-            st.image('book/mod_4_3.png', width=300)
+            st.image('book/mod_4_3.png', width=200)
             exp3 = st.radio(' ', ('a', 'b', 'c'), horizontal=True, key='3rd')
         with c4:
             st.write("Energias disponíveis:")
