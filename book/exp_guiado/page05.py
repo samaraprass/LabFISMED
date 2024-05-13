@@ -50,7 +50,7 @@ def page5_func():
                             unsafe_allow_html=True)
                 #st_lottie(requests.get('https://assets4.lottiefiles.com/private_files/lf30_jq4i7W.json').json(), key="correct", loop = True, height=150)
                 st.error('Resposta errada!Tente novamente...')
-                st.info('Dica: se temos um material com maior número atômico (Z) vai passar menos raios X nesse material do que se tivéssemos um material com menor Z.')
+                st.info('Dica: A atenuação dos raios X é maior em tecidos mais densos e compostos por elementos com número atômico (Z) mais elevados.')
             if exp == 'Costelas (tecido denso)':
                 st.markdown(f'<img src="data:image/gif;base64,{data_url_animation_r}" alt="cat gif" class="center" style="width: 30%; object-fit: contain">',
                             unsafe_allow_html=True)
