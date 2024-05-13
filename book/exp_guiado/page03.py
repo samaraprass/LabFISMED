@@ -69,7 +69,7 @@ def page3_func():
         percs = [perc0, perc1, perc2, perc3]
         percs = np.round(np.array(percs)*100, 2)
 
-        st.session_state['b'] = st.checkbox('Clique aqui para ajustar os pontos!')
+        st.session_state['b'] = st.checkbox('Clique aqui para ligar os pontos!')
         
         if st.session_state['b']:
             fig1, ax1 = plt.subplots(figsize=(10, 5))
